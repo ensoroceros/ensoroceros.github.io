@@ -3,6 +3,76 @@
   <head>
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>NashCoast.com: A Nashville family's guide to the best of the Gulf Coast</title>
+ <style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+td, th {
+  text-align: center;
+  padding: 6px;
+  border: solid 1px #ccc;
+  font-size: 22px;
+}
+
+td {
+  color: red;
+}
+
+.check {
+  color: limegreen;
+  font-size: 30px;
+}
+
+th:first-child,
+td:first-child {
+  font-weight: bold;
+  color: black;
+}
+
+.visible-xs {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .check {
+    color: limegreen;
+    font-size: 20px;
+  }
+  .visible-xs {
+    display: table-row;
+    background: #efefef;
+  }
+  .visible-xs td, th {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  td:first-child,
+  th:first-child {
+    display: none;
+  }
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 130px;
+}
+</style>
   </head>
   <body>
     <div id="headline">
@@ -19,10 +89,126 @@
             <li>A Description of the Highlights and Tradeoffs with each Gulf Coast city</li>
             <li>How to Reserve Your Spot</li>
             <li>How to Have Someone Else do ALL Your Planning so you can just hang loose for the fun!</li>
+            <li>Tips Tips Tips</li>
           </ul>
         </p>
       </div>
     </div>
+
+    <h1>Ratings and Tradeoffs across Gulf Coast cities (East to West)</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Santa Rosa Beach, FL</th>
+          <th>Destin, FL</th>
+          <th>Gulf Shores, AL</th>
+          <th>Fort Morgan, AL</th>
+          <th>Dauphin Island, AL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">Beach Beauty</td>
+        </tr>
+        <tr>
+          <td>Beach Beauty</td>
+          <td><b class="check">Great</b></td>
+          <td><b class="check">Great</b></td>
+          <td><b class="check">Good</b></td>
+          <td><b class="check">Good</b></td>
+          <td><b class="check">Good</b></td>
+        </tr>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">Beach Crowd</td>
+        </tr>
+        <tr>
+          <td>Beach Crowd</td>
+          <!-- <td>&mdash;</td> -->
+          <td><b class="check">Light</b></td>
+          <td><b class="check">Crowded</b></td>
+          <td><b class="check">Crowded</b></td>
+          <td><b class="check">Light</b></td>
+          <td><b class="check">Solitude</b></td>
+        </tr>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">Pricing</td>
+        </tr>
+        <tr>
+          <td>Pricing</td>
+            <td><b class="check">Moderate</b></td>
+            <td><b class="check">Moderate</b></td>
+            <td><b class="check">Moderate</b></td>
+            <td><b class="check">Value</b></td>
+            <td><b class="check">High Value</b></td>
+        </tr>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">Restaurants</td>
+        </tr>
+        <tr>
+          <td>Restaurants</td>
+          <td><b class="check">Good</b></td>
+          <td><b class="check">Great</b></td>
+          <td><b class="check">Good</b></td>
+          <td><b class="check">Good</b></td>
+          <td><b class="check">None</b></td>
+        </tr>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">In-Town Fun</td>
+        </tr>
+        <tr>
+          <td>In-Town Fun</td>
+          <td><b class="check">Light</b></td>
+          <td><b class="check">TONS</b></td>
+          <td><b class="check">TONS</b></td>
+          <td><b class="check">Light</b></td>
+          <td><b class="check">None</b></td>
+        </tr>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">Grocery Runs</td>
+        </tr>
+        <tr>
+          <td>Grocery Runs</td>
+          <td><b class="check">Easy</b></td>
+          <td><b class="check">Easy</b></td>
+          <td><b class="check">Easy</b></td>
+          <td><b class="check">Moderate</b></td>
+          <td><b class="check">Difficult</b></td>
+        </tr>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">In-Town Traffic</td>
+        </tr>
+        <tr>
+          <td>In-Town Traffic</td>
+          <td><b class="check">Wonderful</b></td>
+          <td><b class="check">Bleh</b></td>
+          <td><b class="check">Blerg</b></td>
+          <td><b class="check">Wonderful</b></td>
+          <td><b class="check">What's Traffic?</b></td>
+        </tr>
+        <tr class="visible-xs" aria-hidden="true">
+          <td>&nbsp;</td>
+          <td colspan="5">To-Town Traffic</td>
+        </tr>
+        <tr>
+          <td>To-Town Traffic</td>
+          <td><b class="check">Moderate</b></td>
+          <td><b class="check">Bridge Strategy Required</b></td>
+          <td><b class="check">Bridge Strategy Required</b></td>
+          <td><b class="check">Moderate</b></td>
+          <td><b class="check">Easy</b></td>
+        </tr>
+      </tbody>
+    </table>
+
     <div id="section1">
       <h2>The Drive</h2>
       <p>Heading South on I65</p>
